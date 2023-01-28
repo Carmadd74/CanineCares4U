@@ -1,0 +1,23 @@
+
+		body{
+			color: black;
+			font-family:sans-serif;
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: 33.3% 33.3% 33.4%;*/
+		
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		#content div{
+           
+			background: cyan;
+			padding: 25px;
+		}
+		#content div:nth-child(even){
+			background: lightgray;
+			padding: 30px;
+		}
+	
