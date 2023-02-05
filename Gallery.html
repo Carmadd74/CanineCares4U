@@ -49,15 +49,59 @@
              
                  <p>See Our Furry Family</p>
     </article>        
-                
-    </body>
-    <!--Responsive Thumbnail pics-->
-  <body>
-    <div class="container">
-      <div class="image"> <img src="Storm.jpg" alt="BlkDog."  height="auto" width="100%"/> </div> 
-      <div class="image"> <img src="Jerry.jpg" alt="RatDog"  height="auto" width="100%"/> </div> 
-     <div class="image"> <img src="Stitch.jpeg" alt="BigEyes" height="auto" width="100%"/> </div> 
-    </div>
+            
+
+      
+      
+
+ <div style="text-align:center">
+  <h2>Tabbed Photo Gallery</h2>
+  <p>Click on the images:</p>
+</div>
+        
+     
+     <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="Storm.jpg" alt="BlkDog" height="450px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Jerry.jpg" alt="RatDog" height="450px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Stitch.jpeg" alt="BigEye" height="450px" onclick="myFunction(this);">
+  </div>
+  
+</div>
+    
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+      
+       <script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script> 
+      
+      
+      
+      
+      
+      
                          <p> We Will See You Soon!</p>
         </body>        
     
