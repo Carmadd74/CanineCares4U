@@ -167,3 +167,21 @@ footer
     height: auto;
 }
     
+
+.container {
+    display: flex;
+  align-items: center; 
+  padding-left: 10px;
+    border-bottom: white;
+}
+.image{
+     margin-left: 15px ;
+  margin-right: 15px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+     
+      
