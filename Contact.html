@@ -76,6 +76,14 @@
           
     </header>
     
+    
+
+    
+  
+    
+    
+    
+    
     <footer>
     <b>Contact us for all your Doggie Support: CanineCare4U@gmail.com or (619) 828-1000.</b>
         <img src="ImagePaw003.PNG" alt="PawHeartLOGO" width="100" height="50"/>
@@ -84,5 +92,81 @@
      <ul>
             <li> <a href="index.html">Back to Home Page</a></li>
     </ul>
+    <form action="response_page.php" method="post">
+    <h1>Form Information</h1>
+        <fieldset>
+            <legend>Owner First Name: </legend>
+    <label for="firstname">Basic Information:</label>
+    <input type="text" name="firstname" id="firstname">
     
+    <label for="lastname">Owner Last Name:</label>
+    <input type="text" name="lastname" id="lastname">
+            </fieldset>
+          <br><br>
+        
+        <fieldset>
+             <legend>Dog Info</legend>
+         <label for="dogfirstname">Dog First Name:</label>
+    <input type="text" name="dogfirstname" id="dogfirstname">
+    
+    <label for="doglastname">Dog Last Name:</label>
+    <input type="text" name="doglastname" id="doglastname">
+            
+       <legend> Dog's Gender:</legend> <br/>
+            
+    Female        
+   
+    <input type="radio" name="sex"  >  <bk/>
+    Male
+    
+    <input type="radio" name="sex">    <bk/>
+            
+            <label for="dogbreed">  Dog Breed:</label>
+    <input type="text" name="dogbreed" id="dogbreed">
+      
+              <label for="dogage">  Dog Age:</label>
+    <input type="text" name="dogage" id="dogage">
+            
+        </fieldset>
+         <br><br>
+        
+      <fieldset>
+          <legend>Your Contact Information</legend>
+    <label for="address">Address: </label>
+        <textarea rows="3" cols="30" name="address" id="address"></textarea>
+          
+                 <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-" required > 
+          <small> Format:(123) 456-7890</small><br><br>
+          
+          <label for="email">Email:</label>
+    <input type="text" name="email" id="email">
+        </fieldset>
+           <br><br>
+          <fieldset>
+          <legend>What Services Are You Looking For</legend>
+              
+              <label for="services">Choose a Serivce</label>
+              <select name="services" id="services">
+                  <option value="dogdaycare">Dog Day Care</option>
+              <option value="homehealth">Medical Support Care</option>
+                  <option value="weekend">Extended Day Care</option>
+                  <option value="other">Other</option>
+              </select>
+              
+    <label for="info">Your Needs: </label>
+        <textarea rows="5" cols="50" name="info" id="info"></textarea>
+         </fieldset>
+        
+        <p><label for="review">Canine Cares 4U:</label></p>
+
+<textfield id="review" name="review" rows="5" cols="60">
+We will return your inquiry in 2-3 Days. Thank you!
+</textfield>
+        
+         <br><br>
+        <button>Submit</button>
+    
+    </form>
+   
 </body>
